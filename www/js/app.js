@@ -35,7 +35,6 @@ var option = {
 
 //現在地を取得する
 function find(){
-    console.log("b");
     CurrentPoint.distance = 5; //検索距離を5kmに設定
     navigator.geolocation.getCurrentPosition(onSuccess, onError, option);
 }
@@ -48,7 +47,6 @@ function CurrentPoint(){
 
 //mobile backendから位置情報を検索するメソッド
 function search(current){
-    console.log("c");
     //位置情報を検索するクラスのNCMB.Objectを作成する
     var SpotClass = NCMB.Object.extend("Spot");
 
